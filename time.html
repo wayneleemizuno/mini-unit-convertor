@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wayne Lee">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <title>Mini Unit Converter</title>
+</head>
+
+<body data-category="time">
+    <header>
+        <h1>Mini Unit Converter</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li class="length"><a href="index.html"><span class="category-item"><span
+                                class="category-name">Length</span> <span class="category-icon">📏</span></span></a>
+                </li>
+                <li class="weight"><a href="weight.html"><span class="category-item"><span
+                                class="category-name">Weight</span> <span class="category-icon">⚖️</span></span></a>
+                </li>
+                <li class="temperature"><a href="temperature.html"><span class="category-item"><span
+                                class="category-name">Temperature</span> <span
+                                class="category-icon">🌡️</span></span></a></li>
+                <li class="volume"><a href="volume.html"><span class="category-item"><span
+                                class="category-name">Volume</span> <span class="category-icon">📦</span></span></a>
+                </li>
+                <li class="time"><span class="category-item"><span class="category-name">Time</span> <span
+                            class="category-icon">⏰</span></span></li>
+                <li class="speed"><a href="speed.html"><span class="category-item"><span
+                                class="category-name">Speed</span> <span class="category-icon">🏎️</span></span></a>
+                </li>
+                <li class="area"><a href="area.html"><span class="category-item"><span class="category-name">Area</span>
+                            <span class="category-icon">🔲</span></span></a></li>
+                <li class="energy"><a href="energy.html"><span class="category-item"><span
+                                class="category-name">Energy</span> <span class="category-icon">🔋</span></span></a>
+                </li>
+                <li class="data"><a href="data.html"><span class="category-item"><span class="category-name">Data</span>
+                            <span class="category-icon">💾</span></span></a></li>
+            </ul>
+        </nav>
+
+        <div class="conversion-box time">
+            <p class="note">The converted value is rounded to the nearest 4 decimals.</p>
+            <div class="input-group">
+                <input type="number" id="inputValue" value="1">
+                <select id="inputUnit">
+                    <option value="">Select</option>
+                    <option value="hours">Hours</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="seconds">Seconds</option>
+                    <option value="days">Days</option>
+                    <option value="weeks">Weeks</option>
+                </select>
+            </div>
+            <div class="equal-sign">=</div>
+            <div class="output-group">
+                <div class="output-box">
+                    <p id="outputValue"></p>
+                </div>
+                <select id="outputUnit">
+                    <option value="">Select</option>
+                    <option value="hours">Hours</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="seconds">Seconds</option>
+                    <option value="days">Days</option>
+                    <option value="weeks">Weeks</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Wayne Lee</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
